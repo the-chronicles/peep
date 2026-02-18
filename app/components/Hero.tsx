@@ -1,52 +1,87 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
-import Navbar from "./Navbar";
+import { motion } from "framer-motion";
 
 function Hero() {
   return (
-    <>
-      <div className="bg-[#660033]">
-        {/* <Navbar /> */}
-        <section className="container mx-auto max-w-7xl px-4 py-12 md:py-18">
-          <div className="flex flex-col items-center space-y-10 text-center">
-            <div>
-              <div className="font-semibold text-lg mb-1 tracking-wider text-[#FFDF4C]">
-                Your No. 1 Financial Platform
-              </div>
-              <h1 className="max-w-7xl text-5xl leading-17.5 font-black tracking-tighter text-white uppercase md:text-7xl">
-                Smart payment for <br /> every business
-              </h1>
-            </div>
+    <div className="bg-[#660033]">
+      <section
+        id="hero"
+        className="container mx-auto max-w-7xl px-4 py-12 md:py-20"
+      >
+        <div className="flex flex-col items-center text-center">
+          <motion.p
+            initial={{ opacity: 0, y: 14 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.55, ease: "easeOut" }}
+            className="mb-2 text-sm font-semibold tracking-wider text-[#FFDF4C] sm:text-base"
+          >
+            Your No. 1 Financial Platform
+          </motion.p>
 
-            <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <Link href="/">
-                <span className="rounded-lg bg-[#FFDF4C] px-6 py-3 font-medium text-[#660033] transition hover:opacity-90">
-                  Get the App ↗
-                </span>
-              </Link>
+          <motion.h1
+            initial={{ opacity: 0, y: 18 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.05 }}
+            className="max-w-4xl text-4xl font-black tracking-tight text-white uppercase sm:text-5xl md:text-7xl md:leading-[1.05]"
+          >
+            Smart payment for <br className="hidden sm:block" /> every business
+          </motion.h1>
 
-              <Link href="/">
-                <span className="rounded-lg bg-[#9d577a] px-6 py-3 font-medium text-white transition">
-                  View a demo
-                </span>
-              </Link>
-            </div>
+          <motion.div
+            initial={{ opacity: 0, y: 14 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.12 }}
+            className="mt-7 flex w-full max-w-md justify-center gap-3"
+          >
+            <Link href="/">
+              <motion.span
+                whileHover={{ y: -2 }}
+                whileTap={{ scale: 0.98 }}
+                className="inline-flex w-full items-center justify-center rounded-lg bg-[#FFDF4C] px-6 py-3 text-sm font-semibold text-[#660033] transition sm:w-auto"
+              >
+                Get the App <span className="ml-2">↗</span>
+              </motion.span>
+            </Link>
 
-            <div className="mt-12 flex w-full max-w-7xl justify-center">
+            <Link href="/">
+              <motion.span
+                whileHover={{ y: -2 }}
+                whileTap={{ scale: 0.98 }}
+                className="inline-flex w-full items-center justify-center rounded-lg bg-[#9d577a] px-6 py-3 text-sm font-semibold text-white transition sm:w-auto"
+              >
+                View a demo
+              </motion.span>
+            </Link>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 22, scale: 0.98 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ duration: 0.75, ease: "easeOut", delay: 0.18 }}
+            className="mt-10 w-full"
+          >
+            <div className="relative mx-auto w-full max-w-5xl overflow-hidden rounded-3xl">
+              <div className="pointer-events-none absolute inset-0 rounded-3xl ring-1 ring-white/10" />
+
               <Image
                 src="/images/hero3.png"
                 alt="App preview"
-                width={1200}
-                height={700}
-                className="rounded-3xl object-cover"
+                width={1400}
+                height={820}
+                className="h-auto w-full object-cover"
                 priority
+                loading="eager"
               />
             </div>
-          </div>
-        </section>
-      </div>
-    </>
+
+          </motion.div>
+        </div>
+      </section>
+    </div>
   );
 }
 
