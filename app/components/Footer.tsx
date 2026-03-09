@@ -129,7 +129,7 @@ function Footer() {
           <motion.div variants={fadeUp}>
             <div className="flex items-center gap-3">
               <Image
-                src="/images/logo2.png"
+                src="/images/Logo2.png"
                 alt="Logo"
                 width={96}
                 height={96}
