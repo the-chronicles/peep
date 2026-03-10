@@ -36,7 +36,7 @@ const satoshi = localFont({
 
 export const metadata: Metadata = {
   title: "Peep",
-  description: "Your No. 1 Financial Platfomr",
+  description: "Discpline for growth.",
 };
 
 export default function RootLayout({
