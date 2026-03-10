@@ -49,19 +49,17 @@ function Footer() {
             >
               <motion.h3
                 variants={fadeUp}
-                className="text-4xl leading-tight font-black text-[#660033] uppercase md:text-6xl"
+                className="text-3xl leading-tight font-black text-[#660033] uppercase md:text-6xl"
               >
-                Earn more with <br />
-                frictionless <br />
-                payments
+                Built for people growth seriously.
               </motion.h3>
 
               <motion.p
                 variants={fadeUp}
                 className="mt-3 max-w-md text-sm leading-relaxed text-[#660033]/70 md:text-base"
               >
-                Simplify how you manage money and convert more with your payment
-                experience.
+                From personal consistency to group coordination, Mypeep helps
+                you stay structured and intentional.
               </motion.p>
 
               <motion.div variants={fadeUp} className="mt-7 flex flex-wrap">

@@ -7,38 +7,38 @@ import { motion, type Variants } from "framer-motion";
 
 const FEATURES = [
   {
-    title: "Automated Payments",
-    desc: "Collect payments faster on your terms — automatically or manually.",
-    pill: "Set & forget",
+    title: "Personal Goal Tracking",
+    desc: "Set clear personal targets, stay consistent, and monitor your progress over time.",
+    pill: "Stay consistent",
     image: "/images/iphone2.png",
   },
   {
-    title: "Fixed Payments",
-    desc: "Lock in payments for a fixed duration without hassle until maturity.",
-    pill: "Secure & steady",
+    title: "Group Commitment Circles",
+    desc: "Create shared circles with people you trust and stay aligned on collective goals.",
+    pill: "Grow together",
     image: "/images/iphone2.png",
   },
   {
-    title: "Goal-oriented Payments",
-    desc: "Take payments for multiple goals — solo or with a team.",
-    pill: "Reach targets",
+    title: "Progress Monitoring",
+    desc: "Track milestones, follow your journey, and stay motivated with visible progress.",
+    pill: "See progress",
     image: "/images/iphone2.png",
   },
   {
-    title: "Emergency Fund",
-    desc: "Save, manage, organize, and withdraw whenever you need to.",
-    pill: "Always ready",
+    title: "Centralized Dashboard",
+    desc: "Manage your activities, track updates, and keep everything organized in one place.",
+    pill: "One clear view",
     image: "/images/iphone2.png",
   },
   {
-    title: "Multi-currency",
-    desc: "Accept and hold funds across currencies with simple conversion.",
-    pill: "Global ready",
+    title: "Organized Contributions",
+    desc: "Coordinate group commitments with a clear structure that keeps everyone on track.",
+    pill: "Stay organized",
     image: "/images/iphone2.png",
   },
   {
-    title: "Rent & Bills",
-    desc: "Plan for rent and household expenses with scheduled collections.",
+    title: "Monthly Planning",
+    desc: "Prepare ahead for important recurring commitments with better structure and timing.",
     pill: "Plan ahead",
     image: "/images/iphone2.png",
   },
@@ -74,11 +74,11 @@ export default function Features() {
           className="max-w-3xl"
         >
           <h2 className="text-4xl font-black tracking-tight text-[#660033] md:text-6xl">
-            Many ways to power your payments
+            Everything you need to stay on track
           </h2>
           <p className="mt-3 text-base text-[#660033]/70 md:text-lg">
-            Offer customers flexible options — quick checkout, recurring billing,
-            and secure collections built for every business type.
+            From personal discipline to shared commitments, Mypeep helps you
+            stay organized, consistent, and focused on growth.
           </p>
         </motion.div>
 
@@ -141,7 +141,7 @@ export default function Features() {
                 </div>
               </div>
 
-              <div className="pointer-events-none absolute -right-20 -top-20 h-48 w-48 rounded-full bg-[#FFDF4C]/30 blur-2xl" />
+              <div className="pointer-events-none absolute -top-20 -right-20 h-48 w-48 rounded-full bg-[#FFDF4C]/30 blur-2xl" />
             </motion.article>
           ))}
         </motion.div>

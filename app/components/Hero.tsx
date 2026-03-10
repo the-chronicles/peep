@@ -13,23 +13,49 @@ function Hero() {
         className="container mx-auto max-w-7xl px-4 py-12 md:py-20"
       >
         <div className="flex flex-col items-center text-center">
-          <motion.p
+          {/* <motion.p
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.55, ease: "easeOut" }}
             className="mb-2 text-sm font-semibold tracking-wider text-[#FFDF4C] sm:text-base"
           >
             Your No. 1 Financial Platform
-          </motion.p>
+          </motion.p> */}
 
+          {/* <motion.h1
+            initial={{ opacity: 0, y: 18 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.05 }}
+            className="max-w-4xl text-4xl font-medium tracking-tight text-white uppercase sm:text-5xl md:text-6xl md:leading-[1.05]"
+          >
+            Built for consistency. <br className="hidden sm:block font-black" />Designed for growth.
+          </motion.h1> */}
           <motion.h1
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.05 }}
-            className="max-w-4xl text-4xl font-black tracking-tight text-white uppercase sm:text-5xl md:text-7xl md:leading-[1.05]"
+            className=" md:mt-4 max-w-4xl text-4xl font-medium tracking-tight text-white uppercase sm:text-5xl md:text-6xl md:leading-[1.05]"
           >
-            Smart payment for <br className="hidden sm:block" /> every business
+            Built for consistency.
           </motion.h1>
+          <motion.h1
+            initial={{ opacity: 0, y: 18 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.05 }}
+            className="mb-4 max-w-4xl text-4xl font-black tracking-tight text-white uppercase sm:text-5xl md:text-6xl md:leading-[1.05]"
+          >
+            Designed for growth.
+          </motion.h1>
+
+          <motion.p
+            initial={{ opacity: 0, y: 14 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.55, ease: "easeOut" }}
+            className="mb-2 text-sm font-semibold tracking-wider text-[#FFDF4C] sm:text-base"
+          >
+            Organize your commitments, track your progress, and stay consistent,
+            <br className="hidden sm:block" /> whether solo or with your peeps.
+          </motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 14 }}
@@ -77,7 +103,6 @@ function Hero() {
                 loading="eager"
               />
             </div>
-
           </motion.div>
         </div>
       </section>
