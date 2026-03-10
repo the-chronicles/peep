@@ -51,7 +51,7 @@ function Footer() {
                 variants={fadeUp}
                 className="text-3xl leading-tight font-black text-[#660033] uppercase md:text-6xl"
               >
-                Built for people growth seriously.
+                Designed for real progress.
               </motion.h3>
 
               <motion.p

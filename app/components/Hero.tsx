@@ -36,7 +36,7 @@ function Hero() {
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.05 }}
             className=" md:mt-4 max-w-4xl text-4xl font-medium tracking-tight text-white uppercase sm:text-5xl md:text-6xl md:leading-[1.05]"
           >
-            Built for consistency.
+            Grow as you earn
           </motion.h1>
           <motion.h1
             initial={{ opacity: 0, y: 18 }}
@@ -44,7 +44,7 @@ function Hero() {
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.05 }}
             className="mb-4 max-w-4xl text-4xl font-black tracking-tight text-white uppercase sm:text-5xl md:text-6xl md:leading-[1.05]"
           >
-            Discpline for growth.
+            Grow as you spend
           </motion.h1>
 
           <motion.p
@@ -53,8 +53,8 @@ function Hero() {
             transition={{ duration: 0.55, ease: "easeOut" }}
             className="mb-2 text-sm font-semibold tracking-wider text-[#FFDF4C] sm:text-base"
           >
-            Organize your commitments, track your progress, and stay consistent,
-            <br className="hidden sm:block" /> whether solo or with your peeps.
+            Lifestyle powered growth track that keeps you consistent
+            <br className="hidden sm:block" /> to scale with your day-to-day activities.
           </motion.p>
 
           <motion.div
