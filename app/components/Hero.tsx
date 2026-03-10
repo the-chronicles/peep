@@ -44,7 +44,7 @@ function Hero() {
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.05 }}
             className="mb-4 max-w-4xl text-4xl font-black tracking-tight text-white uppercase sm:text-5xl md:text-6xl md:leading-[1.05]"
           >
-            Designed for growth.
+            Discpline for growth.
           </motion.h1>
 
           <motion.p
