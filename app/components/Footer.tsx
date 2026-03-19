@@ -124,7 +124,7 @@ function Footer() {
           viewport={{ once: true }}
           className="mt-20 grid gap-10 md:grid-cols-2 md:items-start"
         >
-          <motion.div variants={fadeUp}>
+          <motion.div variants={fadeUp} className="flex flex-col">
             <div className="flex items-center gap-3">
               <Image
                 src="/images/Logo2.png"
@@ -139,6 +139,22 @@ function Footer() {
               Manage payments, get insights, and streamline your business
               operations — all in one place.
             </p>
+
+            <div className="mt-10 space-y-3 text-sm text-[#660033]/70">
+              <div>
+                <p className="font-semibold text-[#660033]">Address</p>
+                <p>
+                  Plot 13. Moieed Adekunle Street. CrownView Estate, Adiacent
+                  Lagos Business School, Aiah, Lagos.
+                </p>
+              </div>
+
+              <div>
+                <p className="font-semibold text-[#660033]">Contact</p>
+                <p>Email: hello@mypeepapp.com</p>
+                <p>Phone: +234-803-337-9191</p>
+              </div>
+            </div>
           </motion.div>
 
           <motion.div variants={fadeUp} className="md:justify-self-end">
@@ -182,13 +198,28 @@ function Footer() {
           </p>
 
           <div className="flex items-center gap-4">
-            {["𝕏", "Instagram", "Facebook"].map((s) => (
-              <motion.span key={s} whileHover={{ y: -2, scale: 1.05 }}>
-                <Link href="#" className="hover:text-[#660033]">
-                  {s}
-                </Link>
-              </motion.span>
-            ))}
+            <motion.span whileHover={{ y: -2, scale: 1.05 }}>
+              <Link href="#" className="hover:text-[#660033]">
+                𝕏
+              </Link>
+            </motion.span>
+
+            <motion.span whileHover={{ y: -2, scale: 1.05 }}>
+              <Link
+                href="https://www.instagram.com/mypeepapp?igsh=MXdkZTh1NDQzczlzMA=="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[#660033]"
+              >
+                Instagram
+              </Link>
+            </motion.span>
+
+            <motion.span whileHover={{ y: -2, scale: 1.05 }}>
+              <Link href="#" className="hover:text-[#660033]">
+                Facebook
+              </Link>
+            </motion.span>
           </div>
         </motion.div>
       </div>
