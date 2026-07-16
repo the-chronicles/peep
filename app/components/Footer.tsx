@@ -152,7 +152,7 @@ function Footer() {
               <div>
                 <p className="font-semibold text-[#660033]">Contact</p>
                 <p>Email: hello@mypeepapp.com</p>
-                <p>Phone: +234-803-337-9191</p>
+                <p>Phone: +234-916-000-8763</p>
               </div>
             </div>
           </motion.div>
@@ -194,7 +194,7 @@ function Footer() {
           className="mt-6 flex flex-col items-center justify-between gap-4 text-sm text-[#660033]/70 md:flex-row"
         >
           <p>
-            © {new Date().getFullYear()} Peep Technologies. All rights reserved.
+            © {new Date().getFullYear()} Peep Technologies Limited. All rights reserved.
           </p>
 
           <div className="flex items-center gap-4">
