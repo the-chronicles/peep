@@ -5,20 +5,20 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const FAQS = [
   {
-    q: "What’s Peep?",
-    a: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptatum natus quia delectus, nemo quis odit ut, odio suscipit sapiente quae, quam esse dicta labore officiis corporis perferendis quod sit!",
+    q: "What is Peep?",
+    a: "Peep is a personal growth platform designed to help you build discipline, stay organized, and remain consistent with your goals. Whether you're planning ahead, tracking your progress, or managing everyday commitments, Peep gives you the structure to keep moving forward with confidence.",
   },
   {
     q: "Who are we?",
-    a: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptatum natus quia delectus, nemo quis odit ut, odio suscipit sapiente quae, quam esse dicta labore officiis corporis perferendis quod sit!",
+    a: "We're building tools that make consistency easier. At Peep, we believe meaningful progress comes from small, intentional actions repeated over time. Our mission is to help people stay organized, focused, and committed to what matters most.",
   },
   {
     q: "Why should I use Peep",
-    a: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptatum natus quia delectus, nemo quis odit ut, odio suscipit sapiente quae, quam esse dicta labore officiis corporis perferendis quod sit!",
+    a: "Because staying consistent shouldn't be complicated. Peep helps you organize your goals, plan ahead, monitor your progress, and build habits that lead to lasting growth—all in one simple, easy-to-use app.",
   },
   {
-    q: "How do i get started?",
-    a: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptatum natus quia delectus, nemo quis odit ut, odio suscipit sapiente quae, quam esse dicta labore officiis corporis perferendis quod sit!",
+    q: "How do I get started?",
+    a: "Download Peep, create your account, and start achieving your goals.",
   },
 ];
 
