@@ -144,14 +144,13 @@ function Footer() {
               <div>
                 <p className="font-semibold text-[#660033]">Address</p>
                 <p>
-                  Plot 13. Moieed Adekunle Street. CrownView Estate, Adiacent
-                  Lagos Business School, Aiah, Lagos.
+                  Plot 13, Mojeed Adekunle Street, CrownView Estate, Ajah, Lagos.
                 </p>
               </div>
 
               <div>
                 <p className="font-semibold text-[#660033]">Contact</p>
-                <p>Email: hello@mypeepapp.com</p>
+                <p>Email: support@mypeepapp.com</p>
                 <p>Phone: +234-916-000-8763</p>
               </div>
             </div>
