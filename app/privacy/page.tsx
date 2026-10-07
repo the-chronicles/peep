@@ -4,7 +4,7 @@ import Privacy from "../components/Privacy";
 import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
-  title: "Privacy Notice | Peep",
+  title: "Privacy Policy | Peep",
   description:
     "Learn how Peep Technologies Ltd protects, processes, and manages your personal data and privacy under the Nigeria Data Protection Act (NDPA) 2023.",
 };

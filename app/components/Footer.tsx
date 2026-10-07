@@ -10,7 +10,7 @@ const FOOTER_LINKS = [
   { label: "Learn", href: "/#learn" },
   { label: "FAQs", href: "/#faq" },
   { label: "Terms & Conditions", href: "/terms" },
-  { label: "Privacy Notice", href: "/privacy" },
+  { label: "Privacy Policy", href: "/privacy" },
 ];
 
 const fadeUp = {
@@ -146,7 +146,8 @@ function Footer() {
               <div>
                 <p className="font-semibold text-[#660033]">Address</p>
                 <p>
-                  Plot 13, Mojeed Adekunle Street, CrownView Estate, Ajah, Lagos.
+                  Plot 13, Mojeed Adekunle Street, CrownView Estate, Ajah,
+                  Lagos.
                 </p>
               </div>
 
@@ -195,7 +196,8 @@ function Footer() {
           className="mt-6 flex flex-col items-center justify-between gap-4 text-sm text-[#660033]/70 md:flex-row"
         >
           <p>
-            © {new Date().getFullYear()} Peep Technologies Limited. All rights reserved.
+            © {new Date().getFullYear()} Peep Technologies Limited. All rights
+            reserved.
           </p>
 
           <div className="flex items-center gap-4">
