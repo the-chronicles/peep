@@ -12,7 +12,6 @@ interface TermSection {
 }
 
 export default function Terms() {
-
   const TERMS_SECTIONS: TermSection[] = [
     {
       id: "overview",
@@ -33,7 +32,7 @@ export default function Terms() {
             User.
           </p>
 
-          <div className="rounded-2xl border-l-4 border-[#660033] bg-[#FFDF4C]/25 p-4 text-xs leading-relaxed md:text-sm">
+          <div className="rounded-2xl bg-[#FFDF4C]/25 p-4 text-xs leading-relaxed md:text-sm">
             <p className="font-bold text-[#660033]">
               Regulatory & Banking Partner Notice:
             </p>
@@ -854,7 +853,11 @@ export default function Terms() {
             <section
               key={item.id}
               id={item.id}
-              className={i !== 0 ? "mt-10 border-t border-[#660033]/10 pt-10 md:mt-12 md:pt-12" : ""}
+              className={
+                i !== 0
+                  ? "mt-10 border-t border-[#660033]/10 pt-10 md:mt-12 md:pt-12"
+                  : ""
+              }
             >
               <div className="flex flex-wrap items-center gap-3">
                 <h2 className="text-lg font-bold text-[#660033] md:text-xl">
