@@ -17,29 +17,49 @@ export default function Privacy() {
 
   const toggleIndex = (index: number) => {
     setOpenIndices((prev) =>
-      prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]
+      prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index],
     );
   };
 
   const PRIVACY_SECTIONS: PrivacySection[] = [
     {
       id: "intro",
-      title: "1. Introduction & Overview",
+      title: "1. Introduction",
       badge: "Core Notice",
       content: (
         <div className="space-y-4">
           <p>
-            Peep is a product of <strong>Peep Technologies Ltd</strong>, offered in partnership with <strong>Nomba Financial Services</strong>. Banking services are provided by <strong>Nombank MFB</strong> (a licensed microfinance bank). Deposits are insured by the <strong>NDIC</strong> and the platform operates under licences issued by the <strong>Central Bank of Nigeria (CBN)</strong>.
+            Peep is a product of <strong>Peep Technologies Ltd</strong>, offered
+            in partnership with <strong>Nomba Financial Services</strong>.
+            Banking services are provided by <strong>Nombank MFB</strong> (a
+            licensed microfinance bank). Deposits are insured by the{" "}
+            <strong>NDIC</strong> and the platform operates under licences
+            issued by the <strong>Central Bank of Nigeria (CBN)</strong>.
           </p>
 
           <p>
-            Peep is a payment and savings application that helps users grow as they earn and grow as they spend. It features a lifestyle-powered growth track that keeps users consistent so they can scale with their day-to-day activities. The core savings goal of the App is to help users build a daily savings discipline. Users can choose a unique username and make payments to beneficiaries using the beneficiary’s unique username. With Peep, users can save their payment information for secure, one-click, hassle-free transfers over time on subsequent payments. You maintain control over your account settings and can unlink your information at any time.
+            Peep is a payment and savings application that helps users grow as
+            they earn and grow as they spend. It features a lifestyle-powered
+            growth track that keeps users consistent so they can scale with
+            their day-to-day activities. The core savings goal of the App is to
+            help users build a daily savings discipline. Users can choose a
+            unique username and make payments to beneficiaries using the
+            beneficiary’s unique username. With Peep, users can save their
+            payment information for secure, one-click, hassle-free transfers
+            over time on subsequent payments. You maintain control over your
+            account settings and can unlink your information at any time.
           </p>
 
           <div className="rounded-2xl border-l-4 border-[#660033] bg-[#FFDF4C]/25 p-4 text-xs leading-relaxed md:text-sm">
-            <p className="font-bold text-[#660033]">Your Right to Information:</p>
+            <p className="font-bold text-[#660033]">
+              Your Right to Information:
+            </p>
             <p className="mt-1 text-[#660033]/90">
-              This Privacy Notice (“Notice”) governs your use of Peep (“the Application”, “the App”, “the Product”, or “the Platform”). We provide this Notice because you have a right to know what information we collect, why we collect it, how it is protected and used, and the circumstances under which it may be disclosed.
+              This Privacy Policy (“Notice”) governs your use of Peep (“the
+              Application”, “the App”, “the Product”, or “the Platform”). We
+              provide this Notice because you have a right to know what
+              information we collect, why we collect it, how it is protected and
+              used, and the circumstances under which it may be disclosed.
             </p>
           </div>
         </div>
@@ -53,7 +73,7 @@ export default function Privacy() {
         <div className="space-y-3">
           <p>
             You are required to comply with our{" "}
-            <Link href="/terms" className="font-bold underline text-[#660033]">
+            <Link href="/terms" className="font-bold text-[#660033] underline">
               Terms of Use
             </Link>{" "}
             when using the Product.
@@ -68,14 +88,22 @@ export default function Privacy() {
       content: (
         <div className="space-y-4">
           <p>
-            Personal data is any information about an individual that can be used to identify that person, either directly or indirectly. For example, when using the App, we may request personal information to contact or identify you, and some information may be collected automatically to allow our Platform to function properly. We also collect personal data from third-party sources or through your use of our services.
+            Personal data is any information about an individual that can be
+            used to identify that person, either directly or indirectly. For
+            example, when using the App, we may request personal information to
+            contact or identify you, and some information may be collected
+            automatically to allow our Platform to function properly. We also
+            collect personal data from third-party sources or through your use
+            of our services.
           </p>
 
           <div className="overflow-x-auto rounded-2xl border border-[#660033]/10">
             <table className="w-full text-left text-xs md:text-sm">
               <thead className="bg-[#660033] text-white">
                 <tr>
-                  <th className="px-4 py-3 font-bold text-[#FFDF4C]">Peep Tier</th>
+                  <th className="px-4 py-3 font-bold text-[#FFDF4C]">
+                    Peep Tier
+                  </th>
                   <th className="px-4 py-3 font-bold">Data Collected</th>
                 </tr>
               </thead>
@@ -86,16 +114,27 @@ export default function Privacy() {
                 </tr>
                 <tr className="hover:bg-[#FFDF4C]/10">
                   <td className="px-4 py-3 font-bold text-[#660033]">Tier 2</td>
-                  <td className="px-4 py-3">Selfie, National Identity Number (NIN)</td>
+                  <td className="px-4 py-3">
+                    Selfie, National Identity Number (NIN)
+                  </td>
                 </tr>
                 <tr className="hover:bg-[#FFDF4C]/10">
                   <td className="px-4 py-3 font-bold text-[#660033]">Tier 3</td>
-                  <td className="px-4 py-3">Physical address, Proof of address (for everyone)</td>
+                  <td className="px-4 py-3">
+                    Physical address, Proof of address (for everyone)
+                  </td>
                 </tr>
                 <tr className="bg-[#FFDF4C]/15 font-medium">
-                  <td className="px-4 py-3 font-bold text-[#660033]">All App Users</td>
+                  <td className="px-4 py-3 font-bold text-[#660033]">
+                    All App Users
+                  </td>
                   <td className="px-4 py-3 leading-relaxed">
-                    Name, email address, phone number, date of birth, account details (username and PIN), IP address, transaction data (date, amount, parties, time of transaction), device identifier, operating system (OS) version, analytics (user behavior, feature usage, and product funnel progress), savings goals and progress data.
+                    Name, email address, phone number, date of birth, account
+                    details (username and PIN), IP address, transaction data
+                    (date, amount, parties, time of transaction), device
+                    identifier, operating system (OS) version, analytics (user
+                    behavior, feature usage, and product funnel progress),
+                    savings goals and progress data.
                   </td>
                 </tr>
               </tbody>
@@ -109,10 +148,16 @@ export default function Privacy() {
             <ul className="mt-2 space-y-1 pl-2">
               <li>• Bank Verification Number (BVN)</li>
               <li>• National Identification Number (NIN)</li>
-              <li>• Residential / physical address and proof of address (as required by tier)</li>
+              <li>
+                • Residential / physical address and proof of address (as
+                required by tier)
+              </li>
             </ul>
-            <p className="mt-3 text-xs italic text-[#660033]/80">
-              <strong>Note:</strong> Nigerians in the diaspora use Peep in the same way as users resident in Nigeria. Verification requirements are the same; we do not collect residence permits or treat diaspora users differently for identity verification purposes.
+            <p className="mt-3 text-xs text-[#660033]/80 italic">
+              <strong>Note:</strong> Nigerians in the diaspora use Peep in the
+              same way as users resident in Nigeria. Verification requirements
+              are the same; we do not collect residence permits or treat
+              diaspora users differently for identity verification purposes.
             </p>
           </div>
         </div>
@@ -125,7 +170,9 @@ export default function Privacy() {
       content: (
         <div className="space-y-4">
           <p>
-            To provide you with our services and enhance your experience, our app may request access to certain device features and information. Below, we explain why these permissions are needed:
+            To provide you with our services and enhance your experience, our
+            app may request access to certain device features and information.
+            Below, we explain why these permissions are needed:
           </p>
 
           <div className="grid gap-3">
@@ -161,7 +208,7 @@ export default function Privacy() {
             ].map((item) => (
               <div
                 key={item.perm}
-                className="rounded-xl border border-[#660033]/10 bg-white p-3.5 text-xs md:text-sm shadow-sm"
+                className="rounded-xl border border-[#660033]/10 bg-white p-3.5 text-xs shadow-sm md:text-sm"
               >
                 <div className="flex items-center gap-2">
                   <span className="flex h-6 w-6 items-center justify-center rounded-lg bg-[#FFDF4C] text-xs font-bold text-[#660033]">
@@ -185,7 +232,14 @@ export default function Privacy() {
       content: (
         <div className="space-y-4">
           <p>
-            To verify your identity, Peep uses your selfie to verify that you are who you say you are. This process is cross-checked against your Bank Verification Number (BVN), National Identification Number (NIN), and other means of identification, including previously taken selfies. This process helps verify that the account belongs to the rightful owner. We retain your selfie information securely to support ongoing verification and safeguard your account against unauthorised access.
+            To verify your identity, Peep uses your selfie to verify that you
+            are who you say you are. This process is cross-checked against your
+            Bank Verification Number (BVN), National Identification Number
+            (NIN), and other means of identification, including previously taken
+            selfies. This process helps verify that the account belongs to the
+            rightful owner. We retain your selfie information securely to
+            support ongoing verification and safeguard your account against
+            unauthorised access.
           </p>
 
           <div className="rounded-2xl border border-[#660033]/15 bg-[#FFDF4C]/20 p-4">
@@ -193,16 +247,33 @@ export default function Privacy() {
               Use of Facial Recognition and Liveness Detection:
             </h4>
             <p className="mt-1 text-xs leading-relaxed text-[#660033]/90 md:text-sm">
-              Peep integrates a third-party tool to detect liveness, verifying that a user is real before proceeding with identity verification.
+              Peep integrates a third-party tool to detect liveness, verifying
+              that a user is real before proceeding with identity verification.
             </p>
             <p className="mt-2 text-xs leading-relaxed text-[#660033]/90 md:text-sm">
-              On iOS, the SDK uses Apple’s <strong>TrueDepth API</strong> to detect faces in real time. TrueDepth data is processed entirely on the device and is used only for real-time analysis during verification.
+              On iOS, the SDK uses Apple’s <strong>TrueDepth API</strong> to
+              detect faces in real time. TrueDepth data is processed entirely on
+              the device and is used only for real-time analysis during
+              verification.
             </p>
             <ul className="mt-3 space-y-1.5 text-xs leading-relaxed text-[#660033]/90 md:text-sm">
-              <li>• <strong>No Storage:</strong> TrueDepth data is never stored on the device or transmitted outside the device.</li>
-              <li>• <strong>No Sharing:</strong> The data is not shared with third parties beyond the liveness verification process.</li>
-              <li>• <strong>Limited Usage:</strong> Once the liveness check is completed, the SDK captures a standard facial image, but TrueDepth data is discarded immediately after processing.</li>
-              <li>• <strong>No Personal Identification:</strong> TrueDepth data is not used for identification or authentication.</li>
+              <li>
+                • <strong>No Storage:</strong> TrueDepth data is never stored on
+                the device or transmitted outside the device.
+              </li>
+              <li>
+                • <strong>No Sharing:</strong> The data is not shared with third
+                parties beyond the liveness verification process.
+              </li>
+              <li>
+                • <strong>Limited Usage:</strong> Once the liveness check is
+                completed, the SDK captures a standard facial image, but
+                TrueDepth data is discarded immediately after processing.
+              </li>
+              <li>
+                • <strong>No Personal Identification:</strong> TrueDepth data is
+                not used for identification or authentication.
+              </li>
             </ul>
           </div>
         </div>
@@ -241,7 +312,7 @@ export default function Privacy() {
                 className="rounded-xl border border-[#660033]/10 bg-[#660033]/5 p-3.5 text-xs md:text-sm"
               >
                 <p className="font-bold text-[#660033]">{basis.title}</p>
-                <p className="mt-1 text-xs text-[#660033]/80 leading-relaxed">
+                <p className="mt-1 text-xs leading-relaxed text-[#660033]/80">
                   {basis.desc}
                 </p>
               </div>
@@ -259,64 +330,100 @@ export default function Privacy() {
           <table className="w-full text-left text-xs md:text-sm">
             <thead className="bg-[#660033] text-white">
               <tr>
-                <th className="px-4 py-3 font-bold text-[#FFDF4C]">Purpose of Processing</th>
+                <th className="px-4 py-3 font-bold text-[#FFDF4C]">
+                  Purpose of Processing
+                </th>
                 <th className="px-4 py-3 font-bold">Lawful Bases</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-[#660033]/10 bg-white text-[#660033]/90">
               <tr className="hover:bg-[#FFDF4C]/10">
                 <td className="px-4 py-3 leading-relaxed">
-                  • To help us develop, improve, customise or restructure our services, including through survey outreach.<br />
-                  • To enforce our Terms of Service and any terms and conditions of any other agreements for our services.<br />
-                  • Sending reminders and keeping you updated on the actions you perform on your account (including savings goals and daily discipline reminders).
+                  • To help us develop, improve, customise or restructure our
+                  services, including through survey outreach.
+                  <br />
+                  • To enforce our Terms of Service and any terms and conditions
+                  of any other agreements for our services.
+                  <br />• Sending reminders and keeping you updated on the
+                  actions you perform on your account (including savings goals
+                  and daily discipline reminders).
                 </td>
-                <td className="px-4 py-3 font-semibold text-[#660033]">Legitimate interest, contract</td>
+                <td className="px-4 py-3 font-semibold text-[#660033]">
+                  Legitimate interest, contract
+                </td>
               </tr>
               <tr className="hover:bg-[#FFDF4C]/10">
                 <td className="px-4 py-3 leading-relaxed">
-                  • To process biometric data for user authentication when you opt-in.<br />
-                  • To send you marketing or promotional messages.
+                  • To process biometric data for user authentication when you
+                  opt-in.
+                  <br />• To send you marketing or promotional messages.
                 </td>
-                <td className="px-4 py-3 font-semibold text-[#660033]">Consent</td>
+                <td className="px-4 py-3 font-semibold text-[#660033]">
+                  Consent
+                </td>
               </tr>
               <tr className="hover:bg-[#FFDF4C]/10">
                 <td className="px-4 py-3 leading-relaxed">
-                  • To collect statistical data and product analytics including user behavior, feature usage, and product funnel progress for internal use and to enhance user experience.<br />
-                  • To send you service-related messages.<br />
-                  • To analyse Application usage, maintain and improve the content and functionality of our Application.
+                  • To collect statistical data and product analytics including
+                  user behavior, feature usage, and product funnel progress for
+                  internal use and to enhance user experience.
+                  <br />
+                  • To send you service-related messages.
+                  <br />• To analyse Application usage, maintain and improve the
+                  content and functionality of our Application.
                 </td>
-                <td className="px-4 py-3 font-semibold text-[#660033]">Legitimate interest</td>
+                <td className="px-4 py-3 font-semibold text-[#660033]">
+                  Legitimate interest
+                </td>
               </tr>
               <tr className="hover:bg-[#FFDF4C]/10">
                 <td className="px-4 py-3 leading-relaxed">
-                  • To secure our Application and prevent fraud.<br />
-                  • For ID verification and payment authentication.
+                  • To secure our Application and prevent fraud.
+                  <br />• For ID verification and payment authentication.
                 </td>
-                <td className="px-4 py-3 font-semibold text-[#660033]">Legitimate interest, legal obligation</td>
+                <td className="px-4 py-3 font-semibold text-[#660033]">
+                  Legitimate interest, legal obligation
+                </td>
               </tr>
               <tr className="hover:bg-[#FFDF4C]/10">
                 <td className="px-4 py-3 leading-relaxed">
-                  • To manage your account.<br />
-                  • To provide services to you (payments, savings, growth tracking).
+                  • To manage your account.
+                  <br />• To provide services to you (payments, savings, growth
+                  tracking).
                 </td>
-                <td className="px-4 py-3 font-semibold text-[#660033]">Contract</td>
+                <td className="px-4 py-3 font-semibold text-[#660033]">
+                  Contract
+                </td>
               </tr>
               <tr className="hover:bg-[#FFDF4C]/10">
                 <td className="px-4 py-3 leading-relaxed">
-                  • To send you important updates and information about the service, and to provide customer support when you need help.<br />
-                  • To facilitate and manage transactions and savings contributions.<br />
-                  • To enable a seamless and user-friendly payment and savings experience.<br />
-                  • To send you important updates and information when you opt-in for any Referral or growth Program.
+                  • To send you important updates and information about the
+                  service, and to provide customer support when you need help.
+                  <br />
+                  • To facilitate and manage transactions and savings
+                  contributions.
+                  <br />
+                  • To enable a seamless and user-friendly payment and savings
+                  experience.
+                  <br />• To send you important updates and information when you
+                  opt-in for any Referral or growth Program.
                 </td>
-                <td className="px-4 py-3 font-semibold text-[#660033]">Contract, Legitimate interest</td>
+                <td className="px-4 py-3 font-semibold text-[#660033]">
+                  Contract, Legitimate interest
+                </td>
               </tr>
               <tr className="hover:bg-[#FFDF4C]/10">
                 <td className="px-4 py-3 leading-relaxed">
-                  • To interact with regulatory authorities or other public authorities concerning your use of our Platform.<br />
-                  • To fulfil our Know Your Customer (KYC) obligation.<br />
-                  • To inform you of any changes to our terms of business, services, or our Privacy Notice.
+                  • To interact with regulatory authorities or other public
+                  authorities concerning your use of our Platform.
+                  <br />
+                  • To fulfil our Know Your Customer (KYC) obligation.
+                  <br />• To inform you of any changes to our terms of business,
+                  services, or our Privacy Notice.
                 </td>
-                <td className="px-4 py-3 font-semibold text-[#660033]">Legal obligation</td>
+                <td className="px-4 py-3 font-semibold text-[#660033]">
+                  Legal obligation
+                </td>
               </tr>
             </tbody>
           </table>
@@ -326,11 +433,12 @@ export default function Privacy() {
     {
       id: "rights",
       title: "8. Your Rights as a Data Subject",
-      badge: "User Rights & SNAG",
+      badge: "User Rights",
       content: (
         <div className="space-y-4">
           <p>
-            The law vests you with certain rights as a data subject. They include the right to:
+            The law vests you with certain rights as a data subject. They
+            include the right to:
           </p>
           <ul className="space-y-2 text-xs md:text-sm">
             {[
@@ -343,7 +451,10 @@ export default function Privacy() {
               "Withdraw your consent to processing your data – in some instances, this can be done by opting out of certain communications;",
               "Lodge a complaint with the data protection authority where you have reason to believe that we have violated this Privacy Notice.",
             ].map((r, i) => (
-              <li key={i} className="flex items-start gap-2.5 rounded-lg bg-[#660033]/5 p-2.5">
+              <li
+                key={i}
+                className="flex items-start gap-2.5 rounded-lg bg-[#660033]/5 p-2.5"
+              >
                 <span className="font-bold text-[#660033]">•</span>
                 <span>{r}</span>
               </li>
@@ -354,20 +465,35 @@ export default function Privacy() {
             <h4 className="font-bold text-[#660033]">
               Standard Notice to Address Grievance (SNAG) Procedure:
             </h4>
-            <p className="mt-1 text-[#660033]/90 leading-relaxed">
-              You may also seek resolution of your concerns through a formal grievance process established by the Nigeria Data Protection Commission known as the “Data Subjects’ Standard Notice to Address Grievance” (SNAG) procedure. To submit a SNAG, please fill out the form available in Schedule 9 of GAID on the NDPC’s website or send an email to{" "}
-              <a href="mailto:dpo@mypeepapp.com" className="font-bold underline text-[#660033]">
+            <p className="mt-1 leading-relaxed text-[#660033]/90">
+              You may also seek resolution of your concerns through a formal
+              grievance process established by the Nigeria Data Protection
+              Commission known as the “Data Subjects’ Standard Notice to Address
+              Grievance” (SNAG) procedure. To submit a SNAG, please fill out the
+              form available in Schedule 9 of GAID on the NDPC’s website or send
+              an email to{" "}
+              <a
+                href="mailto:dpo@mypeepapp.com"
+                className="font-bold text-[#660033] underline"
+              >
                 dpo@mypeepapp.com
               </a>{" "}
-              with ‘SNAG’ in the subject line, outlining the details of your grievance.
+              with ‘SNAG’ in the subject line, outlining the details of your
+              grievance.
             </p>
           </div>
 
           <p className="text-xs md:text-sm">
-            You may seek to exercise any of the above rights at any time by emailing us at{" "}
-            <a href="mailto:dpo@mypeepapp.com" className="font-bold underline text-[#660033]">
+            You may seek to exercise any of the above rights at any time by
+            emailing us at{" "}
+            <a
+              href="mailto:dpo@mypeepapp.com"
+              className="font-bold text-[#660033] underline"
+            >
               dpo@mypeepapp.com
-            </a>. For information on how to close your Peep account, please visit the Help Center on the App or website.
+            </a>
+            . For information on how to close your Peep account, please visit
+            the Help Center on the App or website.
           </p>
         </div>
       ),
@@ -379,7 +505,8 @@ export default function Privacy() {
       content: (
         <div className="space-y-4">
           <p>
-            The following service providers support us to ensure the smooth running of the Product:
+            The following service providers support us to ensure the smooth
+            running of the Product:
           </p>
 
           <div className="grid gap-3">
@@ -417,7 +544,7 @@ export default function Privacy() {
             ].map((p) => (
               <div
                 key={p.partner}
-                className="rounded-xl border border-[#660033]/10 bg-white p-3.5 text-xs md:text-sm shadow-sm"
+                className="rounded-xl border border-[#660033]/10 bg-white p-3.5 text-xs shadow-sm md:text-sm"
               >
                 <div className="flex flex-wrap items-center justify-between gap-1">
                   <h4 className="font-bold text-[#660033]">{p.partner}</h4>
@@ -441,15 +568,27 @@ export default function Privacy() {
       content: (
         <div className="space-y-4">
           <p>
-            The data and any other information we collect from you will be stored for as long as necessary to fulfil the purposes described in this Notice. However, we will also retain data in line with applicable laws, as well as to resolve disputes, prevent fraud and abuse, and enforce our legal agreements and policies.
+            The data and any other information we collect from you will be
+            stored for as long as necessary to fulfil the purposes described in
+            this Notice. However, we will also retain data in line with
+            applicable laws, as well as to resolve disputes, prevent fraud and
+            abuse, and enforce our legal agreements and policies.
           </p>
 
           <p>
-            We will delete your data related to marketing purposes once you unsubscribe from our marketing communications by following the steps in Section 13 of this Notice. The facial liveness data collected to authenticate Tier 2 accounts will be deleted <strong>five (5) years</strong> after the authentication is completed, in line with our retention periods and statutory obligations around KYC data.
+            We will delete your data related to marketing purposes once you
+            unsubscribe from our marketing communications by following the steps
+            in Section 13 of this Notice. The facial liveness data collected to
+            authenticate Tier 2 accounts will be deleted{" "}
+            <strong>five (5) years</strong> after the authentication is
+            completed, in line with our retention periods and statutory
+            obligations around KYC data.
           </p>
 
-          <p className="rounded-xl bg-[#660033]/5 p-3 text-xs italic md:text-sm text-[#660033]/85">
-            Please note that any transaction and KYC data may be retained longer, notwithstanding your request to remove it, where there is a legal requirement to do so.
+          <p className="rounded-xl bg-[#660033]/5 p-3 text-xs text-[#660033]/85 italic md:text-sm">
+            Please note that any transaction and KYC data may be retained
+            longer, notwithstanding your request to remove it, where there is a
+            legal requirement to do so.
           </p>
         </div>
       ),
@@ -461,18 +600,33 @@ export default function Privacy() {
       content: (
         <div className="space-y-4">
           <p>
-            We use strong technical and organisational measures to safeguard your data from unauthorised access or accidental loss. We adhere to data protection laws and best practices, implementing security protocols such as encryption, firewalls, and physical access controls. Our employees only access your data when necessary and are contractually bound to maintain its confidentiality.
+            We use strong technical and organisational measures to safeguard
+            your data from unauthorised access or accidental loss. We adhere to
+            data protection laws and best practices, implementing security
+            protocols such as encryption, firewalls, and physical access
+            controls. Our employees only access your data when necessary and are
+            contractually bound to maintain its confidentiality.
           </p>
 
           <div className="rounded-2xl border border-[#660033]/15 bg-[#FFDF4C]/20 p-4">
-            <h4 className="font-bold text-[#660033]">Industry Standards & Two-Factor Authentication:</h4>
+            <h4 className="font-bold text-[#660033]">
+              Industry Standards & Two-Factor Authentication:
+            </h4>
             <p className="mt-1 text-xs leading-relaxed text-[#660033]/90 md:text-sm">
-              We comply with applicable payment industry security standards to secure financial information and maintain high standards of information security (including practices aligned with ISO/IEC 27001 and related frameworks where applicable). This includes regular security updates. We have also added two-factor authentication (2FA) for extra security. You will need to enter a one-time password (OTP) where required for sensitive actions.
+              We comply with applicable payment industry security standards to
+              secure financial information and maintain high standards of
+              information security (including practices aligned with ISO/IEC
+              27001 and related frameworks where applicable). This includes
+              regular security updates. We have also added two-factor
+              authentication (2FA) for extra security. You will need to enter a
+              one-time password (OTP) where required for sensitive actions.
             </p>
           </div>
 
           <p>
-            If there is a data breach that could harm your rights and freedoms, we will notify you promptly and take all necessary steps to resolve the issue.
+            If there is a data breach that could harm your rights and freedoms,
+            we will notify you promptly and take all necessary steps to resolve
+            the issue.
           </p>
         </div>
       ),
@@ -484,10 +638,19 @@ export default function Privacy() {
       content: (
         <div className="space-y-3">
           <p>
-            Our services involve using third-party servers in other countries (for example cloud infrastructure providers). This means your data may be transferred abroad. We ensure your data is processed and protected in accordance with this Notice and relevant laws, regardless of location.
+            Our services involve using third-party servers in other countries
+            (for example cloud infrastructure providers). This means your data
+            may be transferred abroad. We ensure your data is processed and
+            protected in accordance with this Notice and relevant laws,
+            regardless of location.
           </p>
           <p>
-            When transferring data outside Nigeria, we take extra steps to protect it and choose reliable third parties. Please contact us for more information about data transfers to third countries, including our transfer methods. Furthermore, we transfer data when we have a legal obligation to do so, need to establish or defend a legal claim or have a public interest obligation.
+            When transferring data outside Nigeria, we take extra steps to
+            protect it and choose reliable third parties. Please contact us for
+            more information about data transfers to third countries, including
+            our transfer methods. Furthermore, we transfer data when we have a
+            legal obligation to do so, need to establish or defend a legal claim
+            or have a public interest obligation.
           </p>
         </div>
       ),
@@ -499,7 +662,12 @@ export default function Privacy() {
       content: (
         <div className="space-y-3">
           <p>
-            We only send marketing communications to you with your consent. You may opt out of our marketing or object to further processing by clicking on the ‘unsubscribe’ button at the bottom of marketing emails or by adjusting preferences in the App. You can also unsubscribe from any newsletters we share with you at any time by clicking the ‘unsubscribe’ button.
+            We only send marketing communications to you with your consent. You
+            may opt out of our marketing or object to further processing by
+            clicking on the ‘unsubscribe’ button at the bottom of marketing
+            emails or by adjusting preferences in the App. You can also
+            unsubscribe from any newsletters we share with you at any time by
+            clicking the ‘unsubscribe’ button.
           </p>
         </div>
       ),
@@ -511,13 +679,22 @@ export default function Privacy() {
       content: (
         <div className="space-y-3">
           <p>
-            If you are concerned about an alleged breach of data protection law or any other regulation by us, you can contact the Data Protection Officer (DPO) at{" "}
-            <a href="mailto:dpo@mypeepapp.com" className="font-bold underline text-[#660033]">
+            If you are concerned about an alleged breach of data protection law
+            or any other regulation by us, you can contact the Data Protection
+            Officer (DPO) at{" "}
+            <a
+              href="mailto:dpo@mypeepapp.com"
+              className="font-bold text-[#660033] underline"
+            >
               dpo@mypeepapp.com
-            </a>. The DPO will investigate your complaint and provide information about how it is handled.
+            </a>
+            . The DPO will investigate your complaint and provide information
+            about how it is handled.
           </p>
           <p>
-            If you are still unsatisfied with the resolution of your complaint, you may escalate this to your local Data Protection Authority (for Nigeria, the <strong>Nigeria Data Protection Commission</strong>).
+            If you are still unsatisfied with the resolution of your complaint,
+            you may escalate this to your local Data Protection Authority (for
+            Nigeria, the <strong>Nigeria Data Protection Commission</strong>).
           </p>
         </div>
       ),
@@ -529,13 +706,21 @@ export default function Privacy() {
       content: (
         <div className="space-y-3">
           <p>
-            We occasionally update our privacy notice. We will notify our users when we make a change, and they will know this by checking the last update date on this page whenever they visit.
+            We occasionally update our privacy notice. We will notify our users
+            when we make a change, and they will know this by checking the last
+            update date on this page whenever they visit.
           </p>
           <p>
-            If you have any questions relating to this Notice or your rights under this Notice or are not satisfied with how we manage your data, kindly reach out to our Data Protection Officer at{" "}
-            <a href="mailto:dpo@mypeepapp.com" className="font-bold underline text-[#660033]">
+            If you have any questions relating to this Notice or your rights
+            under this Notice or are not satisfied with how we manage your data,
+            kindly reach out to our Data Protection Officer at{" "}
+            <a
+              href="mailto:dpo@mypeepapp.com"
+              className="font-bold text-[#660033] underline"
+            >
               dpo@mypeepapp.com
-            </a>.
+            </a>
+            .
           </p>
         </div>
       ),
@@ -545,7 +730,6 @@ export default function Privacy() {
   return (
     <section className="w-full bg-[#FFDF4C]/20 py-14 md:py-20">
       <div className="container mx-auto max-w-4xl px-4">
-        {/* Header matching Faqs.tsx and Terms.tsx */}
         <motion.div
           initial={{ opacity: 0, y: 14 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -560,11 +744,12 @@ export default function Privacy() {
           </div>
 
           <h1 className="mt-4 text-4xl font-black tracking-tight text-[#660033] uppercase md:text-6xl">
-            Privacy Notice
+            Privacy Policy
           </h1>
 
           <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-[#660033]/80 md:text-base">
-            Learn how Peep collects, uses, protects, and manages your personal data and privacy across all our services.
+            Learn how Peep collects, uses, protects, and manages your personal
+            data and privacy across all our services.
           </p>
         </motion.div>
 
@@ -580,7 +765,7 @@ export default function Privacy() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.5, ease: "easeOut", delay: i * 0.03 }}
-                className="rounded-2xl bg-white shadow-[0_12px_30px_rgba(0,0,0,0.08)] border border-[#660033]/10"
+                className="rounded-2xl border border-[#660033]/10 bg-white shadow-[0_12px_30px_rgba(0,0,0,0.08)]"
                 layout
               >
                 <button
@@ -645,7 +830,6 @@ export default function Privacy() {
           })}
         </div>
 
-        {/* Regulatory & Contact Footer Card */}
         <motion.div
           initial={{ opacity: 0, y: 14 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -657,7 +841,10 @@ export default function Privacy() {
             Peep Technologies Limited
           </p>
           <p className="mx-auto mt-2 max-w-2xl text-xs leading-relaxed text-white/80 md:text-sm">
-            Peep is a product of Peep Technologies Ltd, in partnership with Nomba Financial Services. Banking services are provided by Nombank MFB. Deposits are NDIC-insured. Licensed by the Central Bank of Nigeria (CBN).
+            Peep is a product of Peep Technologies Ltd, in partnership with
+            Nomba Financial Services. Banking services are provided by Nombank
+            MFB. Deposits are NDIC-insured. Licensed by the Central Bank of
+            Nigeria (CBN).
           </p>
           <div className="mt-5 flex flex-wrap items-center justify-center gap-4 text-xs font-semibold md:text-sm">
             <a
