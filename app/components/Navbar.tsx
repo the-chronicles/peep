@@ -8,6 +8,7 @@ const NAV_LINKS = [
   { label: "Features", href: "#features" },
   { label: "Learn", href: "#learn" },
   { label: "FAQs", href: "#faq" },
+  { label: "Terms", href: "#Terms" },
 ];
 
 function Navbar() {
@@ -36,7 +37,9 @@ function Navbar() {
 
     const observer = new IntersectionObserver(
       (entries) => {
-        const heroEntry = entries.find((e) => (e.target as HTMLElement).id === "hero");
+        const heroEntry = entries.find(
+          (e) => (e.target as HTMLElement).id === "hero",
+        );
 
         if (heroEntry?.isIntersecting) {
           setActiveHash("");
@@ -46,7 +49,9 @@ function Navbar() {
         const visible = entries
           .filter((e) => e.isIntersecting)
           .filter((e) => (e.target as HTMLElement).id !== "hero")
-          .sort((a, b) => (b.intersectionRatio ?? 0) - (a.intersectionRatio ?? 0))[0];
+          .sort(
+            (a, b) => (b.intersectionRatio ?? 0) - (a.intersectionRatio ?? 0),
+          )[0];
 
         if (visible?.target?.id) {
           setActiveHash(`#${(visible.target as HTMLElement).id}`);
@@ -55,7 +60,7 @@ function Navbar() {
       {
         threshold: [0.25, 0.35, 0.5, 0.65],
         rootMargin: "-10% 0px -65% 0px",
-      }
+      },
     );
 
     sections.forEach((s) => observer.observe(s));
@@ -68,7 +73,12 @@ function Navbar() {
 
     const id = href.replace("#", "");
     const el = document.getElementById(id);
-    if (!el) return;
+    if (!el) {
+      if (typeof window !== "undefined" && window.location.pathname !== "/") {
+        window.location.href = `/${href}`;
+      }
+      return;
+    }
 
     const y = el.getBoundingClientRect().top + window.scrollY - 90;
     window.scrollTo({ top: y, behavior: "smooth" });
@@ -121,7 +131,7 @@ function Navbar() {
           <div className="flex items-center gap-3">
             <Link
               href="/login"
-              className="hidden sm:inline-flex rounded-lg bg-[#FFDF4C] px-5 py-2 text-sm font-semibold text-[#660033] transition hover:opacity-90"
+              className="hidden rounded-lg bg-[#FFDF4C] px-5 py-2 text-sm font-semibold text-[#660033] transition hover:opacity-90 sm:inline-flex"
             >
               Get Started
             </Link>
@@ -140,8 +150,8 @@ function Navbar() {
 
         <div
           className={[
-            "md:hidden overflow-hidden transition-all duration-300",
-            open ? "max-h-64 opacity-100 mt-4" : "max-h-0 opacity-0 mt-0",
+            "overflow-hidden transition-all duration-300 md:hidden",
+            open ? "mt-4 max-h-64 opacity-100" : "mt-0 max-h-0 opacity-0",
           ].join(" ")}
         >
           <div className="rounded-xl bg-[#FFDF4C] p-2">

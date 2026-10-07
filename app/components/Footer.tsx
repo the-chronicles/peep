@@ -6,9 +6,10 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const FOOTER_LINKS = [
-  { label: "Features", href: "#features" },
-  { label: "Learn", href: "#learn" },
-  { label: "FAQs", href: "#faq" },
+  { label: "Features", href: "/#features" },
+  { label: "Learn", href: "/#learn" },
+  { label: "FAQs", href: "/#faq" },
+  { label: "Terms & Conditions", href: "/terms" },
 ];
 
 const fadeUp = {
