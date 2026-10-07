@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 interface PrivacySection {
   id: string;
@@ -12,15 +12,6 @@ interface PrivacySection {
 }
 
 export default function Privacy() {
-  // Default first section open, accordion toggle behavior
-  const [openIndices, setOpenIndices] = useState<number[]>([0]);
-
-  const toggleIndex = (index: number) => {
-    setOpenIndices((prev) =>
-      prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index],
-    );
-  };
-
   const PRIVACY_SECTIONS: PrivacySection[] = [
     {
       id: "intro",
@@ -50,7 +41,7 @@ export default function Privacy() {
             account settings and can unlink your information at any time.
           </p>
 
-          <div className="rounded-2xl border-l-4 border-[#660033] bg-[#FFDF4C]/25 p-4 text-xs leading-relaxed md:text-sm">
+          <div className="rounded-2xl bg-[#FFDF4C]/25 p-4 text-xs leading-relaxed md:text-sm">
             <p className="font-bold text-[#660033]">
               Your Right to Information:
             </p>
@@ -208,7 +199,7 @@ export default function Privacy() {
             ].map((item) => (
               <div
                 key={item.perm}
-                className="rounded-xl border border-[#660033]/10 bg-white p-3.5 text-xs shadow-sm md:text-sm"
+                className="rounded-xl bg-white p-3.5 text-xs shadow-sm md:text-sm"
               >
                 <div className="flex items-center gap-2">
                   <span className="flex h-6 w-6 items-center justify-center rounded-lg bg-[#FFDF4C] text-xs font-bold text-[#660033]">
@@ -753,81 +744,34 @@ export default function Privacy() {
           </p>
         </motion.div>
 
-        {/* Accordion List structured exactly like Faqs.tsx and Terms.tsx */}
-        <div className="mt-10 space-y-4">
-          {PRIVACY_SECTIONS.map((item, i) => {
-            const isOpen = openIndices.includes(i);
+        {/* Single comprehensive card containing all policy details */}
+        <div className="mt-10 rounded-3xl border border-[#660033]/10 bg-white p-6 shadow-[0_12px_30px_rgba(0,0,0,0.08)] sm:p-8 md:p-12">
+          {PRIVACY_SECTIONS.map((item, i) => (
+            <section
+              key={item.id}
+              id={item.id}
+              className={
+                i !== 0
+                  ? "mt-10 border-t border-[#660033]/10 pt-10 md:mt-12 md:pt-12"
+                  : ""
+              }
+            >
+              <div className="flex flex-wrap items-center gap-3">
+                <h2 className="text-lg font-bold text-[#660033] md:text-xl">
+                  {item.title}
+                </h2>
+                {item.badge && (
+                  <span className="inline-block rounded-full bg-[#FFDF4C]/50 px-2.5 py-0.5 text-[11px] font-bold text-[#660033]">
+                    {item.badge}
+                  </span>
+                )}
+              </div>
 
-            return (
-              <motion.div
-                key={item.id}
-                initial={{ opacity: 0, y: 14 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 0.5, ease: "easeOut", delay: i * 0.03 }}
-                className="rounded-2xl border border-[#660033]/10 bg-white shadow-[0_12px_30px_rgba(0,0,0,0.08)]"
-                layout
-              >
-                <button
-                  type="button"
-                  onClick={() => toggleIndex(i)}
-                  className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left"
-                  aria-expanded={isOpen}
-                >
-                  <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:gap-3">
-                    <span className="text-base font-semibold text-[#660033] md:text-lg">
-                      {item.title}
-                    </span>
-                    {item.badge && (
-                      <span className="inline-block w-fit rounded-full bg-[#FFDF4C]/50 px-2.5 py-0.5 text-[11px] font-bold text-[#660033]">
-                        {item.badge}
-                      </span>
-                    )}
-                  </div>
-
-                  <motion.span
-                    animate={{ rotate: isOpen ? 180 : 0 }}
-                    transition={{ duration: 0.25, ease: "easeOut" }}
-                    className={[
-                      "flex h-9 w-9 shrink-0 items-center justify-center rounded-full",
-                      "border border-[#660033]/15",
-                      isOpen
-                        ? "bg-[#FFDF4C] text-[#660033]"
-                        : "bg-white text-[#660033]",
-                    ].join(" ")}
-                    aria-hidden="true"
-                  >
-                    <span className="text-xl leading-none">
-                      {isOpen ? "×" : "+"}
-                    </span>
-                  </motion.span>
-                </button>
-
-                <AnimatePresence initial={false}>
-                  {isOpen && (
-                    <motion.div
-                      key="content"
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: "auto", opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.28, ease: "easeOut" }}
-                      className="overflow-hidden"
-                    >
-                      <motion.div
-                        initial={{ y: -6 }}
-                        animate={{ y: 0 }}
-                        exit={{ y: -6 }}
-                        transition={{ duration: 0.28, ease: "easeOut" }}
-                        className="border-t border-[#660033]/10 px-6 pt-5 pb-6 text-sm leading-relaxed text-[#660033]/85 md:text-base"
-                      >
-                        {item.content}
-                      </motion.div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </motion.div>
-            );
-          })}
+              <div className="mt-4 text-sm leading-relaxed text-[#660033]/85 md:text-base">
+                {item.content}
+              </div>
+            </section>
+          ))}
         </div>
 
         <motion.div

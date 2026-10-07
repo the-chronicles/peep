@@ -153,7 +153,7 @@ function Footer() {
 
               <div>
                 <p className="font-semibold text-[#660033]">Contact</p>
-                <p>Email: support@mypeepapp.com</p>
+                <p>Email: peep@mypeepapp.com</p>
                 <p>Phone: +234-916-000-8763</p>
               </div>
             </div>
