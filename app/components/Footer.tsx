@@ -10,6 +10,7 @@ const FOOTER_LINKS = [
   { label: "Learn", href: "/#learn" },
   { label: "FAQs", href: "/#faq" },
   { label: "Terms & Conditions", href: "/terms" },
+  { label: "Privacy Notice", href: "/privacy" },
 ];
 
 const fadeUp = {

@@ -8,7 +8,7 @@ const NAV_LINKS = [
   { label: "Features", href: "#features" },
   { label: "Learn", href: "#learn" },
   { label: "FAQs", href: "#faq" },
-  { label: "Terms", href: "#Terms" },
+  // { label: "Terms", href: "#Terms" },
 ];
 
 function Navbar() {

@@ -218,7 +218,7 @@ export default function Terms() {
     },
     {
       id: "account-registration",
-      title: "3. Account Registration & Third-Party Providers",
+      title: "3. Account Registration",
       badge: "Onboarding & Partners",
       content: (
         <div className="space-y-4">
@@ -712,7 +712,7 @@ export default function Terms() {
     },
     {
       id: "miscellaneous",
-      title: "9. Miscellaneous & Governing Law",
+      title: "9. Miscellaneous",
       badge: "Jurisdiction",
       content: (
         <div className="space-y-3">
