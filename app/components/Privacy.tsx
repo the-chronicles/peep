@@ -510,7 +510,7 @@ export default function Privacy() {
               {
                 partner: "Mono, Dojah and Termii",
                 role: "Identity Verification & KYC",
-                desc: "We use Mono, Dojah and termii for identity verification, KYC, document verification and related checks to prevent duplicate account creation and fraud, and to meet our legal obligations.",
+                desc: "We use Mono, Dojah and Termii for identity verification, KYC, document verification and related checks to prevent duplicate account creation and fraud, and to meet our legal obligations.",
               },
               // {
               //   partner: "Open Router (Embedded Analytics Model)",
