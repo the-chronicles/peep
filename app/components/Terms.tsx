@@ -794,7 +794,7 @@ export default function Terms() {
             },
             {
               term: "Third-Party Providers",
-              desc: "Licensed financial institutions (including Nombank MFB / Nomba Financial Services), identity providers (including Mono and Dojah), or any third-party supplier that we collaborate with to provide the Services.",
+              desc: "Licensed financial institutions (including Nombank MFB / Nomba Financial Services), identity providers (including Mono, Dojah and Termii), or any third-party supplier that we collaborate with to provide the Services.",
             },
             {
               term: "Wallet Account",
