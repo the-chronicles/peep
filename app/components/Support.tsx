@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 export default function Support() {
-  const mailtoLink = "mailto:peep@mypeepapp.com?subject=Peep%20Support%20Request";
+  const mailtoLink = "mailto:peep@mypeepapp.com";
 
   return (
     <section className="w-full bg-[#FFDF4C]/20 py-16 md:py-24">
@@ -13,7 +13,7 @@ export default function Support() {
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
-          className="rounded-3xl border border-[#660033]/10 bg-white p-7 sm:p-9 shadow-[0_12px_30px_rgba(0,0,0,0.08)]"
+          className="rounded-3xl border border-[#660033]/10 bg-white p-7 shadow-[0_12px_30px_rgba(0,0,0,0.08)] sm:p-9"
         >
           <h1 className="text-xl font-bold tracking-tight text-[#660033] sm:text-2xl">
             Peep Support
