@@ -11,8 +11,8 @@ const FOOTER_LINKS = [
   { label: "FAQs", href: "/#faq" },
   { label: "Terms & Conditions", href: "/terms" },
   { label: "Privacy Policy", href: "/privacy" },
-  // { label: "Support Page", href: "/support" },
-  // { label: "Delete Account", href: "/delete-account" },
+  { label: "Support", href: "/support" },
+  { label: "Delete Account", href: "/delete-account" },
 ];
 
 const fadeUp = {
