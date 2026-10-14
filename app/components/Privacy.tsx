@@ -508,15 +508,15 @@ export default function Privacy() {
                 desc: "We partner with Nomba Financial Services and Nombank MFB to provide banking and wallet services. Virtual or savings accounts allow users to hold funds in their Peep Wallets. Deposits are NDIC-insured. Read their privacy notices as published by Nomba/Nombank.",
               },
               {
-                partner: "Mono and Dojah",
+                partner: "Mono, Dojah and Termii",
                 role: "Identity Verification & KYC",
-                desc: "We use Mono and Dojah for identity verification, KYC, document verification and related checks to prevent duplicate account creation and fraud, and to meet our legal obligations.",
+                desc: "We use Mono, Dojah and termii for identity verification, KYC, document verification and related checks to prevent duplicate account creation and fraud, and to meet our legal obligations.",
               },
-              {
-                partner: "Open Router (Embedded Analytics Model)",
-                role: "Product Analytics",
-                desc: "We use an embedded analytics model via Open Router to understand how people use our app so we can make it better and more useful. This supports product analytics and usage insights.",
-              },
+              // {
+              //   partner: "Open Router (Embedded Analytics Model)",
+              //   role: "Product Analytics",
+              //   desc: "We use an embedded analytics model via Open Router to understand how people use our app so we can make it better and more useful. This supports product analytics and usage insights.",
+              // },
               {
                 partner: "In-House Crash Reporting (ClickHouse)",
                 role: "Crash & Error Monitoring",
